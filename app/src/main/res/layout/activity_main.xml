@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="330dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/m4RadioButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="apple"
+            android:text="Яблоко"
+            tools:ignore="UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/x5MRadioButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="pear"
+            android:text="Груша"
+            tools:ignore="UsingOnClickInXml" />
+
+        <RadioButton
+            android:id="@+id/m5RadioButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="grape"
+            android:text="Виноград"
+            tools:ignore="UsingOnClickInXml" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:onClick="checkBoxApple"
+        android:text="Яблоко"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="MissingConstraints,UsingOnClickInXml"
+        tools:layout_editor_absoluteX="19dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="130dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="92dp"
+        android:onClick="checkBoxPear"
+        android:text="Груша"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="115dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="156dp"
+        android:onClick="checkBoxGrapes"
+        android:text="Виноград"
+        app:layout_constraintStart_toStartOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        tools:ignore="MissingConstraints,UsingOnClickInXml" />
+
+    <ImageView
+        android:id="@+id/imageViewApple"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="168dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewPear"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <ImageView
+        android:id="@+id/imageViewPear"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="100dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <ImageView
+        android:id="@+id/imageViewGrapes"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginTop="36dp"
+        android:contentDescription="TODO"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPear"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
